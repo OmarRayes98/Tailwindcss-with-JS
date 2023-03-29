@@ -1,0 +1,237 @@
+@tailwind base;
+
+@tailwind components;
+
+
+.header-section {
+    @apply
+        h-auto
+        font-maven
+        px-4
+        /* md:px-8 */
+        pt-4
+        py-2
+}
+
+@screen md {
+        .header-section {
+            @apply px-8
+        }
+}
+
+
+
+.headroom--unpinned {
+    display: none;
+}
+
+.headroom--top{
+    box-shadow: none;
+    position: static;
+}
+
+.dark-mode {
+    background-color: #0c0c0d;
+}
+
+.dark-mode .navbar {
+    color: white;
+    background-color: #0c0c0d;
+}
+
+.dark-mode nav .menu-color {
+    color: white;
+}
+
+.dark-mode .header-hero-span {
+    color: white;
+    background-color: #0d;
+}
+
+.dark-mode .header-hero-heading {
+    color: white;
+}
+
+.dark-mode .ps-heading {
+    color: white;
+}
+
+.dark-mode .rs-heading {
+    color: white;
+}
+
+.dark-mode .timeline-content-title-primary{
+    color: white;
+}
+
+.dark-mode .cs-heading{
+    color: white;
+}
+
+.dark-mode input ,
+.dark-mode textarea{
+    background-color: #0c0c0d;
+    color: #a0aec0;
+}
+
+#menu{
+ animation: translate .5s;
+}
+
+@keyframes translate {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+
+.menu-icon {
+    @apply cursor-pointer self-center mr-2 block
+}
+
+@screen md {
+    .menu-icon{
+        @apply hidden
+    }
+}
+
+
+
+.menuItems{
+    @apply hidden w-full text-center
+}
+
+@screen md {
+    .menuItems{
+        @apply flex flex-grow w-auto
+    }
+}
+
+.header-hero {
+    @apply flex flex-wrap justify-center pt-32 pb-20
+}
+
+@screen lg {
+    .header-hero{
+        @apply px-4
+    }
+}
+
+.btn{
+    @apply 
+    w-full 
+    sm:w-auto
+    transition 
+    duration-200
+    hover:bg-primary 
+    rounded-full 
+    font-semibold 
+    my-1 
+    mx-auto 
+    px-8 
+    py-3
+}
+
+.owl-item > img{
+    @apply max-w-5xl inline-block  !important
+}
+
+.owl-prev > span {
+    @apply hidden
+}
+
+.owl-prev::before {
+    content: "\f060";
+    background: none;
+    padding: 0;
+    display: block;
+    position: absolute;
+    top:50%;
+    left:130px;
+    transform: translate(0, -50%);
+    font-family:"FontAwesome";
+    color:#47465A;
+    font-size: 70px;
+    -webkit-text-stroke: 6px white;
+    text-stroke: 6px white;
+}
+
+.owl-next > span {
+    @apply hidden
+}
+
+.owl-next::before {
+    content: "\f061";
+    background: none;
+    padding: 0;
+    display: block;
+    position: absolute;
+    top:50%;
+    right:130px;
+    transform: translate(0, -50%);
+    font-family:"FontAwesome";
+    color:#47465A;
+    font-size: 70px;
+    -webkit-text-stroke: 6px white;
+    text-stroke: 6px white;
+}
+
+.owl-theme .owl-nav{
+    @apply -mt-14
+}
+
+.timeline::before {
+    content: "";
+    background: #47465A;
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    left: 38px;
+}
+
+.timeline-yr {
+    @apply float-left  mr-6 relative w-20 h-20 bg-secondary rounded-full
+}
+
+.timeline-content-title-primary{
+    @apply capitalize  text-headingColor2 font-bold text-3xl block
+}
+
+.timeline-content-title-secondary{
+    @apply capitalize text-base text-secondary font-black 
+}
+
+@screen lg {
+    .timeline-content-title-primary{
+        @apply inline
+    }
+    .timeline-content-title-secondary{
+        @apply ml-3
+    }
+
+    .timeline-yr{
+        @apply mr-3
+
+    }
+}
+
+.timeline-content-text {
+    @apply  text-textColor tracking-wide text-lg font-light ml-24
+}
+
+.timeline-yr > span {
+
+    top:50%;
+    left: 50%;
+    @apply absolute text-white font-semibold transform -translate-x-1/2
+    -translate-y-1/2;
+}
+
+
+
+
+@tailwind utilities;
+

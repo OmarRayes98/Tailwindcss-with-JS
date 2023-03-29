@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Tailwind css</title>
+
+    <!-- Font-awesome -->
+    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- olw-carousel2 library-->
+    <link rel="stylesheet" href="./dist/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./dist/css/owl.theme.default.min.css" />
+
+    <link rel="stylesheet" href="dist/css/main.css" />
+
+    <!--Fonts-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400,@700@900&display=swap');
+        
+        #menu-toggle:checked + #menu {
+            display: block;
+        }
+    </style>
+
+</head>
+<body>
+    <!--Header Section-->
+    <header class="header-section xl:h-screen container mx-auto max-w-full">
+        <nav class="navbar py-2 pt-4 flex justify-between flex-wrap">             
+        <div class="lg:pl-4">
+            <a href="/" class="text-2xl py-2">
+                <i class="fa fa-diamond text-3xl" aria-hidden="true"></i>
+                <span class="font-bold capitalize">marvel</span>
+            </a>
+        </div>
+
+        <label for="menu-toggle" class="menu-icon">
+            <svg class="fill-current  .menu-color" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                <title>menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+        </label>
+        <input class="hidden" type="checkbox" id="menu-toggle" />
+
+        <div id="menu" class="menuItems">
+            <ul class="pt-5 md:pt-0 md:flex md:flex-grow md:justify-center">
+                <li class="py-2 mx-4"><a class="capitalize" href="#">about</a></li>
+                <li class="py-2 mx-4"><a class="capitalize" href="#">projects</a></li>
+                <li class="py-2 mx-4"><a class="capitalize" href="#">resume</a></li>
+                <li class="py-2 mx-4"><a class="capitalize" href="#">contact</a></li>
+            </ul>
+            <div class=" font-semibold mt-2 lg:pr-4 color-mode cursor-pointer">
+                <i class="fa fa-moon-o" aria-hidden="true"></i>
+                <span> Color mode</span>
+            </div>
+        </div>
+        </nav>
+
+        <div class="header-hero">
+            <div class="sm:w-full lg:w-1/2 ">
+                <span class="px-4 py-2 text-textColor font-semibold text-sm capitalize header-hero-span">welcome to my portoflio website!</span>
+                <h1 class="header-hero-heading text-4xl font-semibold my-2">Hey folks, I'm <span class="element text-primary">
+
+                </span>
+                </h1>
+                <p class="mb-4 text-textColor tracking-wide text-lg">
+                    Building a successful product is a challenge.
+                    I am highly energetic in user experience design,
+                    interfaces and web development.
+                </p>
+                <div class="w-full">
+                    <button class="btn bg-grey text-textColor">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        download resume
+                    </button>
+                    <button class="btn bg-secondary text-white">get a free quote</button>
+                </div>
+            </div>
+
+            <div class="w-[full] lg:w-1/2 flex justify-center min-[320px]:mt-10 lg:mt-0">
+                <img src="./dist/images/app/image_header.svg" class="lg:w-4/5" alt="image-header"/>
+            </div>
+        </div>
+    </header>
+    <!--End Header Section-->
+
+    <!--Start Project Section-->
+    <section class="header-section container mx-auto text-center">
+        <div class="px-4 max-w-4xl md:max-w-2xl mx-auto">
+            <h2 class="text-3xl font-black text-headingColor2 md:text-4xl ps-heading">Things I have designed for digital media agencies</h2>
+        </div>
+        <div class="owl-carousel owl-theme owl-loaded owl-drag pb-20 ">
+            <div class="owl-stage-outer">
+                <div class="owl-stage">
+                    <div class="owl-item">
+                        <img src="./dist/images/project/project-image01.png" alt="project1">
+                    </div>
+                    <div class="owl-item">
+                        <img src="./dist/images/project/project-image02.png" alt="project2">
+                    </div>
+                    <div class="owl-item">
+                        <img src="./dist/images/project/project-image03.png" alt="project3">
+                    </div>
+                    <div class="owl-item">
+                        <img src="./dist/images/project/project-image04.png" alt="project4">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--End Project Section-->
+    <!--Start Rusume Section-->
+    <section class="header-section container  mx-auto font-maven pb-20">
+        <div class="flex flex-wrap lg:flex-nowrap  px-4">
+            <div class="lg:w-1/2 w-full">
+                <h2 class="capitalize font-bold text-4xl mb-6 text-headingColor2 rs-heading">experiences</h2>
+                <div class="timeline pb-12 relative ">
+                    
+                        <div class="timeline-yr ">
+                            <span>2019</span>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="mb-2">
+                                <span class="timeline-content-title-primary ">project manager</span>
+                                <span class="timeline-content-title-secondary">best studio</span>
+                            </h3>
+                            <p class=" timeline-content-text">
+                                Proin oraner non profi fi fpdfd . Nulla dfdsifh fgfg . Lsosfd
+                                dlsfd sdfdfdsih . Cseifef as dlfggfoifggi
+                            </p>
+                        </div>
+                </div>
+                <div class="timeline pb-12 relative ">
+                    
+                    <div class="timeline-yr ">
+                        <span>2019</span>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="mb-2">
+                            <span class="timeline-content-title-primary">project manager</span>
+                            <span class="timeline-content-title-secondary">best studio</span>
+                        </h3>
+                        <p class=" timeline-content-text">
+                            Proin oraner non profi fi fpdfd . Nulla dfdsifh fgfg . Lsosfd
+                            dlsfd sdfdfdsih . Cseifef as dlfggfoifggi
+                        </p>
+                    </div>
+            </div>
+            <div class="timeline pb-12 relative ">
+                    
+                <div class="timeline-yr ">
+                    <span>2019</span>
+                </div>
+                <div class="ml-4">
+                    <h3 class="mb-2">
+                        <span class="timeline-content-title-primary">project manager</span>
+                        <span class="timeline-content-title-secondary">best studio</span>
+                    </h3>
+                    <p class=" timeline-content-text">
+                        Proin oraner non profi fi fpdfd . Nulla dfdsifh fgfg . Lsosfd
+                        dlsfd sdfdfdsih . Cseifef as dlfggfoifggi
+                    </p>
+                </div>
+        </div>
+        <div class="pb-12 relative ">
+                    
+            <div class="timeline-yr ">
+                <span>2019</span>
+            </div>
+            <div class="ml-4">
+                <h3 class="mb-2">
+                    <span class="timeline-content-title-primary">project manager</span>
+                    <span class="timeline-content-title-secondary">best studio</span>
+                </h3>
+                <p class=" timeline-content-text">
+                    Proin oraner non profi fi fpdfd . Nulla dfdsifh fgfg . Lsosfd
+                    dlsfd sdfdfdsih . Cseifef as dlfggfoifggi
+                </p>
+            </div>
+    </div>
+            </div>
+
+            <div class="w-full lg:w-1/2 lg:ml-8 ">
+                <h2 class="capitalize font-bold text-4xl mb-6 text-headingColor2 rs-heading">education</h2>
+                <div class="timeline pb-12 relative ">
+                    
+                        <div class="timeline-yr ">
+                            <span>2019</span>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="mb-2">
+                                <span class="timeline-content-title-primary">project manager</span>
+                                <span class="timeline-content-title-secondary">best studio</span>
+                            </h3>
+                            <p class=" timeline-content-text">
+                                Proin oraner non profi fi fpdfd . Nulla dfdsifh fgfg . Lsosfd
+                                dlsfd sdfdfdsih . Cseifef as dlfggfoifggi
+                            </p>
+                        </div>
+                </div>
+                <div class="timeline pb-12 relative ">
+                    
+                    <div class="timeline-yr ">
+                        <span>2019</span>
+                    </div>
+                    <div class="ml-4">
+                        <h3 class="mb-2">
+                            <span class="timeline-content-title-primary">project manager</span>
+                            <span class="timeline-content-title-secondary">best studio</span>
+                        </h3>
+                        <p class=" timeline-content-text">
+                            Proin oraner non profi fi fpdfd . Nulla dfdsifh fgfg . Lsosfd
+                            dlsfd sdfdfdsih . Cseifef as dlfggfoifggi
+                        </p>
+                    </div>
+            </div>
+            <div class="timeline pb-12 relative ">
+                    
+                <div class="timeline-yr ">
+                    <span>2019</span>
+                </div>
+                <div class="ml-4">
+                    <h3 class="mb-2">
+                        <span class="timeline-content-title-primary">project manager</span>
+                        <span class="timeline-content-title-secondary">best studio</span>
+                    </h3>
+                    <p class=" timeline-content-text">
+                        Proin oraner non profi fi fpdfd . Nulla dfdsifh fgfg . Lsosfd
+                        dlsfd sdfdfdsih . Cseifef as dlfggfoifggi
+                    </p>
+                </div>
+        </div>
+        <div class="pb-12 relative ">
+                    
+            <div class="timeline-yr ">
+                <span>2019</span>
+            </div>
+            <div class="ml-4">
+                <h3 class="mb-2">
+                    <span class="timeline-content-title-primary">project manager</span>
+                    <span class="timeline-content-title-secondary">best studio</span>
+                </h3>
+                <p class=" timeline-content-text">
+                    Proin oraner non profi fi fpdfd . Nulla dfdsifh fgfg . Lsosfd
+                    dlsfd sdfdfdsih . Cseifef as dlfggfoifggi
+                </p>
+            </div>
+    </div>
+            </div>
+        </div>
+
+    </div>
+    </section>
+    <!--End Rusume Section-->
+
+    <!--Start Contact Section-->
+    <section class="header-section container mx-auto pb-20">
+        <div class="flex items-start flex-wrap flex-col min-[1300px]:flex-row min-[1300px]:flex-nowrap px-4">
+
+            <div class="w-full min-[1300px]:w-1/2 min-[1300px]:ml-14">
+
+                <div class="w-full min-[1300px]:w-[500px]">
+                    <div style="max-width:100%;list-style:none; transition: none;overflow:hidden;  width:100%; height:300px;">
+                        <div id="my-map-canvas" style="height:100%; width:100%;max-width:100%;">
+                            <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Latakia,+Syria&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                        </div>
+                        <a class="googlemaps-made" rel="nofollow" href="https://www.bootstrapskins.com/themes" id="auth-map-data">premium bootstrap themes</a>
+                        <style>#my-map-canvas img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}
+                        </style>
+                        </div>
+                </div>
+
+                <div class="flex justify-between w-full min-[1300px]:w-[500px] bg-secondary p-8  text-white">
+                    <div>
+                        <h4 class="text-3xl font-semibold mb-2">Say hello</h4>
+                        <p>010 020 0920</p>
+                        <a href="#">hello@company.com</a>
+                    </div>
+    
+                    <div class="self-center">
+                        <a href="#"><i class="fa fa-dribbble  text-xl block" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-instagram  text-xl block" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-youtube-play  text-xl block" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="w-full min-[1300px]:w-1/2 min-[1300px]:ml-12  mt-8 min-[1300px]:mt-0">
+                <h3 class="cs-heading w-[80%] text-3xl font-semibold text-headingColor2 md:text-4xl mb-5 font-maven leading-snug">
+                    interested to work together? let's talk
+                </h3>
+                <form class="w-full min-[1300px]:w-[90%]">
+                    <div class="flex flex-col ">
+                        <div class="flex flex-col min-[1300px]:flex-row min-[1300px]:justify-between">
+                        <input class="border-solid border border-gray-500 focus:border-primary rounded-sm  outline-none min-[1300px]:w-[45%] px-4 py-2 mb-2 min-[1300px]:mb-0" type="text" placeholder="Your Name"/>
+                        <input class="border-solid border border-gray-500 focus:border-primary rounded-sm  outline-none min-[1300px]:w-[45%] px-4 py-2" type="email" placeholder="Your Email"/>
+                        </div>
+                        <textarea class="w-full  mt-3 border-solid border border-gray-500 outline-none focus:border-primary rounded-sm  px-4 py-2" cols="30" rows="8" placeholder="Message">
+                        </textarea>
+                        <div class="min-[1300px]:self-end self-stretch mt-1">
+                            <button class="btn w-full  mb-0 min-[1300px]:w-auto bg-secondary text-white hover:bg-primary" type="submit"  >Send Button</button>
+                        </div>
+    
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+    </section>
+    <!--End Contact Section-->
+    <!---->
+    <!---->
+
+
+
+
+    <script src="./dist/js/jquery-3.3.1.min.js"></script>
+    <script src="./dist/js/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha512-52YmORpI2a/kIVQ9S4ELQTjKcbxRzFIhq967wO8lzKrs+45JA/24XCX+dJarTgPA/8NN2qVokQNriWmdWRgeTA==" crossorigin="anonymous"></script>
+    <script src="./dist/js/main.js"></script>
+
+</body>
+</html>

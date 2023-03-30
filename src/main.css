@@ -143,7 +143,7 @@
     @apply hidden
 }
 
-.owl-prev::before {
+.owl-prev:before {
     content: "\f060";
     background: none;
     padding: 0;
@@ -154,7 +154,7 @@
     transform: translate(0, -50%);
     font-family:"FontAwesome";
     color:#47465A;
-    font-size: 70px;
+    font-size: 70px ;
     -webkit-text-stroke: 6px white;
     text-stroke: 6px white;
 }
